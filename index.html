@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Desk Operator Pack — Kreation Studios</title>
+  <meta name="description" content="Templates to run a Scout → Grader → Writer agent desk. No finance. No fluff. $19 founding." />
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --card: #141820;
+      --text: #e8ecf1;
+      --muted: #9aa3b2;
+      --accent: #7c5cff;
+      --accent2: #3dd6c6;
+      --border: #243042;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1a1030 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      border: 1px solid #2a4a46;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.15; margin: 0 0 12px; }
+    .sub { color: var(--muted); font-size: 1.05rem; margin-bottom: 28px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      margin: 18px 0;
+    }
+    ul { padding-left: 1.15rem; }
+    li { margin: 8px 0; }
+    .price {
+      display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+      margin: 8px 0 18px;
+    }
+    .price .now { font-size: 2rem; font-weight: 700; }
+    .price .was { color: var(--muted); text-decoration: line-through; }
+    .price .tag {
+      background: #243018; color: #c6f06a; font-size: 12px;
+      padding: 3px 8px; border-radius: 6px;
+    }
+    .cta {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), #4f7cff);
+      color: white; text-decoration: none; font-weight: 600;
+      padding: 14px 22px; border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(124,92,255,0.35);
+    }
+    .cta:hover { filter: brightness(1.06); }
+    .cta.secondary {
+      background: transparent; border: 1px solid var(--border);
+      box-shadow: none; color: var(--text); margin-left: 8px;
+    }
+    .fine { color: var(--muted); font-size: 0.9rem; margin-top: 14px; }
+    .grid { display: grid; gap: 12px; }
+    @media (min-width: 640px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+    footer { margin-top: 40px; color: var(--muted); font-size: 0.85rem; }
+    code { background: #0f131a; padding: 1px 6px; border-radius: 4px; }
+    .placeholder {
+      border: 1px dashed #5a4a20; background: #1a160c; color: #e6c86a;
+      padding: 10px 12px; border-radius: 8px; font-size: 0.9rem; margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <span class="eyebrow">Kreation Studios · Agent Tools</span>
+    <h1>Agent Desk Operator Pack</h1>
+    <p class="sub">
+      Run a small desk of AI agents that finish work: Scout gathers with citations,
+      Grader picks the shortlist, Writer drafts with one clear CTA — you approve.
+      Templates from real multi-agent desks. No finance content. No fluff.
+    </p>
+
+    <div class="card">
+      <div class="price">
+        <span class="now">$19</span>
+        <span class="was">$27</span>
+        <span class="tag">Founding week · through Nov 3, 2026</span>
+      </div>
+      <!-- Replace href with Stripe Payment Link from Thomas -->
+      <a class="cta" id="buy" href="#payment-setup">Get the pack — $19</a>
+      <a class="cta secondary" href="#tips">Tip instead</a>
+      <div class="placeholder" id="payment-setup">
+        Payment link pending: Thomas creates a Stripe Payment Link for $19 and replaces this button’s URL.
+        Until then, email purchase intent to the address on your receipt setup notes.
+      </div>
+      <p class="fine">Instant download: Markdown kit + ZIP. Personal &amp; commercial use of the templates. Not a hosted SaaS.</p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0">What’s inside</h2>
+      <ul>
+        <li>Scout → Grader → Writer pipeline (any niche: newsletter, changelog, local events, creator updates)</li>
+        <li>Shared-memory / “super memory” contract so agents stop contradicting each other</li>
+        <li>Game/creative studio role cards (Story / Build / Polish)</li>
+        <li>Routine scheduling guardrails (no surprise posts)</li>
+        <li>Copy-paste prompt library + first-week checklists</li>
+      </ul>
+    </div>
+
+    <div class="grid two">
+      <div class="card">
+        <h3 style="margin-top:0">Built for</h3>
+        <p class="fine" style="margin:0">People already paying for an agent host who want a desk that ships drafts on a clock — without babysitting every step.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Not for</h3>
+        <p class="fine" style="margin:0">Anyone wanting investment tips, insurance tools, auto-trading, or a bot that posts without you. This pack refuses that scope on purpose.</p>
+      </div>
+    </div>
+
+    <div class="card" id="tips">
+      <h2 style="margin-top:0">Support the build logs</h2>
+      <p class="fine">Not buying the pack? Tips keep the public write-ups coming.</p>
+      <p class="placeholder">Tip Payment Links ($5 / $10 / custom) — Thomas adds Stripe links here.</p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0">FAQ</h2>
+      <p><strong>What do I download?</strong> A ZIP of Markdown templates and guides you paste into your agents.</p>
+      <p><strong>Which host?</strong> Any multi-agent setup (Grok Bot, Claude projects, Cursor agents, etc.).</p>
+      <p><strong>Refunds?</strong> If the files won’t open or the link fails, email within 7 days for a full refund.</p>
+      <p><strong>Affiliation?</strong> Kreation Studios Agent Tools. Not an insurance or securities product.</p>
+    </div>
+
+    <footer>
+      © 2026 Kreation Studios · Agent Tools · Independent digital product<br />
+      Not Cash Glotzer Group · Not investment advice · Not affiliated with xAI beyond using Grok Bot as a customer
+    </footer>
+  </main>
+</body>
+</html>
